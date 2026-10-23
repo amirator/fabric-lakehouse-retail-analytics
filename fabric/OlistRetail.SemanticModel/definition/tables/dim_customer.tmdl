@@ -1,0 +1,34 @@
+table dim_customer
+	lineageTag: 0e87abff-5182-b3b4-b504-e30cf497bdef
+
+	column customer_id
+		dataType: string
+		summarizeBy: none
+		sourceColumn: customer_id
+		lineageTag: 8b86c4c5-cab6-1dba-ca12-2b2de6b8ab72
+
+	column customer_unique_id
+		dataType: string
+		summarizeBy: none
+		sourceColumn: customer_unique_id
+		lineageTag: 3eb8275b-ea7d-da69-daee-f9e696a5d11f
+
+	column city
+		dataType: string
+		summarizeBy: none
+		sourceColumn: city
+		lineageTag: 90cde21b-a053-f5ba-b4b1-995569a8963d
+
+	column state
+		dataType: string
+		summarizeBy: none
+		sourceColumn: state
+		lineageTag: 096f78c6-4d1f-e8cc-9c43-346891a3ad49
+
+	partition dim_customer = entity
+		mode: directLake
+		source
+			entityName: dim_customer
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+

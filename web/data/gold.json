@@ -1,0 +1,1073 @@
+{
+ "gold_monthly_kpis": [
+  {
+   "year_month": "2016-09",
+   "orders": 4,
+   "delivered_orders": 1,
+   "gmv": 134.97,
+   "aov": 134.97,
+   "late_pct": 100.0,
+   "avg_review": 1.0
+  },
+  {
+   "year_month": "2016-10",
+   "orders": 324,
+   "delivered_orders": 265,
+   "gmv": 40325.11,
+   "aov": 152.17,
+   "late_pct": 0.74,
+   "avg_review": 3.561
+  },
+  {
+   "year_month": "2016-12",
+   "orders": 1,
+   "delivered_orders": 1,
+   "gmv": 10.9,
+   "aov": 10.9,
+   "late_pct": 0.0,
+   "avg_review": 5.0
+  },
+  {
+   "year_month": "2017-01",
+   "orders": 800,
+   "delivered_orders": 750,
+   "gmv": 111798.36,
+   "aov": 149.06,
+   "late_pct": 2.93,
+   "avg_review": 4.062
+  },
+  {
+   "year_month": "2017-02",
+   "orders": 1780,
+   "delivered_orders": 1653,
+   "gmv": 234223.4,
+   "aov": 141.7,
+   "late_pct": 2.96,
+   "avg_review": 4.016
+  },
+  {
+   "year_month": "2017-03",
+   "orders": 2682,
+   "delivered_orders": 2546,
+   "gmv": 359198.85,
+   "aov": 141.08,
+   "late_pct": 4.56,
+   "avg_review": 4.074
+  },
+  {
+   "year_month": "2017-04",
+   "orders": 2404,
+   "delivered_orders": 2303,
+   "gmv": 340669.68,
+   "aov": 147.92,
+   "late_pct": 6.56,
+   "avg_review": 4.044
+  },
+  {
+   "year_month": "2017-05",
+   "orders": 3700,
+   "delivered_orders": 3545,
+   "gmv": 489159.25,
+   "aov": 137.99,
+   "late_pct": 2.99,
+   "avg_review": 4.14
+  },
+  {
+   "year_month": "2017-06",
+   "orders": 3245,
+   "delivered_orders": 3135,
+   "gmv": 421923.37,
+   "aov": 134.58,
+   "late_pct": 3.03,
+   "avg_review": 4.147
+  },
+  {
+   "year_month": "2017-07",
+   "orders": 4026,
+   "delivered_orders": 3872,
+   "gmv": 481604.52,
+   "aov": 124.38,
+   "late_pct": 2.79,
+   "avg_review": 4.176
+  },
+  {
+   "year_month": "2017-08",
+   "orders": 4331,
+   "delivered_orders": 4193,
+   "gmv": 554699.7,
+   "aov": 132.29,
+   "late_pct": 2.91,
+   "avg_review": 4.239
+  },
+  {
+   "year_month": "2017-09",
+   "orders": 4285,
+   "delivered_orders": 4150,
+   "gmv": 607399.67,
+   "aov": 146.36,
+   "late_pct": 4.39,
+   "avg_review": 4.188
+  },
+  {
+   "year_month": "2017-10",
+   "orders": 4631,
+   "delivered_orders": 4478,
+   "gmv": 648247.65,
+   "aov": 144.76,
+   "late_pct": 4.18,
+   "avg_review": 4.123
+  },
+  {
+   "year_month": "2017-11",
+   "orders": 7544,
+   "delivered_orders": 7288,
+   "gmv": 987648.07,
+   "aov": 135.52,
+   "late_pct": 12.4,
+   "avg_review": 3.911
+  },
+  {
+   "year_month": "2017-12",
+   "orders": 5673,
+   "delivered_orders": 5513,
+   "gmv": 726033.19,
+   "aov": 131.69,
+   "late_pct": 7.46,
+   "avg_review": 4.018
+  },
+  {
+   "year_month": "2018-01",
+   "orders": 7269,
+   "delivered_orders": 7069,
+   "gmv": 924645.0,
+   "aov": 130.8,
+   "late_pct": 5.7,
+   "avg_review": 4.041
+  },
+  {
+   "year_month": "2018-02",
+   "orders": 6728,
+   "delivered_orders": 6555,
+   "gmv": 826437.13,
+   "aov": 126.08,
+   "late_pct": 14.14,
+   "avg_review": 3.826
+  },
+  {
+   "year_month": "2018-03",
+   "orders": 7211,
+   "delivered_orders": 7003,
+   "gmv": 953356.25,
+   "aov": 136.14,
+   "late_pct": 18.96,
+   "avg_review": 3.753
+  },
+  {
+   "year_month": "2018-04",
+   "orders": 6939,
+   "delivered_orders": 6798,
+   "gmv": 973534.09,
+   "aov": 143.21,
+   "late_pct": 4.5,
+   "avg_review": 4.162
+  },
+  {
+   "year_month": "2018-05",
+   "orders": 6873,
+   "delivered_orders": 6749,
+   "gmv": 977544.69,
+   "aov": 144.84,
+   "late_pct": 6.56,
+   "avg_review": 4.194
+  },
+  {
+   "year_month": "2018-06",
+   "orders": 6167,
+   "delivered_orders": 6096,
+   "gmv": 855591.97,
+   "aov": 140.35,
+   "late_pct": 1.16,
+   "avg_review": 4.277
+  },
+  {
+   "year_month": "2018-07",
+   "orders": 6292,
+   "delivered_orders": 6156,
+   "gmv": 867486.47,
+   "aov": 140.92,
+   "late_pct": 3.38,
+   "avg_review": 4.263
+  },
+  {
+   "year_month": "2018-08",
+   "orders": 6512,
+   "delivered_orders": 6351,
+   "gmv": 838576.64,
+   "aov": 132.04,
+   "late_pct": 6.19,
+   "avg_review": 4.256
+  },
+  {
+   "year_month": "2018-09",
+   "orders": 16,
+   "delivered_orders": 0,
+   "gmv": 0.0,
+   "aov": null,
+   "late_pct": null,
+   "avg_review": 1.8
+  },
+  {
+   "year_month": "2018-10",
+   "orders": 4,
+   "delivered_orders": 0,
+   "gmv": 0.0,
+   "aov": null,
+   "late_pct": null,
+   "avg_review": 2.25
+  }
+ ],
+ "gold_category_kpis": [
+  {
+   "category": "health_beauty",
+   "orders": 8647,
+   "items": 9465,
+   "gmv": 1233131.72,
+   "avg_review": 4.19,
+   "late_pct": 7.56
+  },
+  {
+   "category": "watches_gifts",
+   "orders": 5493,
+   "items": 5857,
+   "gmv": 1165898.98,
+   "avg_review": 4.071,
+   "late_pct": 7.21
+  },
+  {
+   "category": "bed_bath_table",
+   "orders": 9272,
+   "items": 10953,
+   "gmv": 1023434.76,
+   "avg_review": 3.924,
+   "late_pct": 7.03
+  },
+  {
+   "category": "sports_leisure",
+   "orders": 7529,
+   "items": 8430,
+   "gmv": 954673.55,
+   "avg_review": 4.165,
+   "late_pct": 6.31
+  },
+  {
+   "category": "computers_accessories",
+   "orders": 6529,
+   "items": 7643,
+   "gmv": 888613.62,
+   "avg_review": 3.987,
+   "late_pct": 6.49
+  },
+  {
+   "category": "furniture_decor",
+   "orders": 6307,
+   "items": 8160,
+   "gmv": 711927.69,
+   "avg_review": 3.953,
+   "late_pct": 7.03
+  },
+  {
+   "category": "housewares",
+   "orders": 5743,
+   "items": 6795,
+   "gmv": 615628.69,
+   "avg_review": 4.106,
+   "late_pct": 5.0
+  },
+  {
+   "category": "cool_stuff",
+   "orders": 3559,
+   "items": 3718,
+   "gmv": 610204.1,
+   "avg_review": 4.195,
+   "late_pct": 5.84
+  },
+  {
+   "category": "auto",
+   "orders": 3809,
+   "items": 4139,
+   "gmv": 578849.35,
+   "avg_review": 4.115,
+   "late_pct": 7.03
+  },
+  {
+   "category": "toys",
+   "orders": 3803,
+   "items": 4029,
+   "gmv": 471097.49,
+   "avg_review": 4.208,
+   "late_pct": 6.35
+  },
+  {
+   "category": "garden_tools",
+   "orders": 3448,
+   "items": 4268,
+   "gmv": 470495.28,
+   "avg_review": 4.084,
+   "late_pct": 6.56
+  },
+  {
+   "category": "baby",
+   "orders": 2809,
+   "items": 2982,
+   "gmv": 400421.84,
+   "avg_review": 4.078,
+   "late_pct": 7.68
+  },
+  {
+   "category": "perfumery",
+   "orders": 3086,
+   "items": 3340,
+   "gmv": 390144.65,
+   "avg_review": 4.22,
+   "late_pct": 6.5
+  },
+  {
+   "category": "telephony",
+   "orders": 4093,
+   "items": 4430,
+   "gmv": 309860.23,
+   "avg_review": 3.994,
+   "late_pct": 6.95
+  },
+  {
+   "category": "office_furniture",
+   "orders": 1254,
+   "items": 1668,
+   "gmv": 268154.31,
+   "avg_review": 3.516,
+   "late_pct": 7.97
+  },
+  {
+   "category": "stationery",
+   "orders": 2264,
+   "items": 2466,
+   "gmv": 223788.69,
+   "avg_review": 4.246,
+   "late_pct": 6.77
+  },
+  {
+   "category": "computers",
+   "orders": 177,
+   "items": 199,
+   "gmv": 218684.14,
+   "avg_review": 4.219,
+   "late_pct": 5.03
+  },
+  {
+   "category": "pet_shop",
+   "orders": 1688,
+   "items": 1924,
+   "gmv": 211695.64,
+   "avg_review": 4.217,
+   "late_pct": 4.94
+  },
+  {
+   "category": "musical_instruments",
+   "orders": 611,
+   "items": 651,
+   "gmv": 184315.74,
+   "avg_review": 4.222,
+   "late_pct": 7.37
+  },
+  {
+   "category": "small_appliances",
+   "orders": 609,
+   "items": 658,
+   "gmv": 182754.12,
+   "avg_review": 4.224,
+   "late_pct": 4.56
+  },
+  {
+   "category": "unknown",
+   "orders": 1392,
+   "items": 1537,
+   "gmv": 170726.63,
+   "avg_review": 3.939,
+   "late_pct": 7.48
+  },
+  {
+   "category": "electronics",
+   "orders": 2517,
+   "items": 2729,
+   "gmv": 155043.93,
+   "avg_review": 4.067,
+   "late_pct": 7.59
+  },
+  {
+   "category": "fashion_bags_accessories",
+   "orders": 1820,
+   "items": 1985,
+   "gmv": 149329.39,
+   "avg_review": 4.194,
+   "late_pct": 5.29
+  },
+  {
+   "category": "consoles_games",
+   "orders": 1018,
+   "items": 1089,
+   "gmv": 148003.37,
+   "avg_review": 4.139,
+   "late_pct": 5.88
+  },
+  {
+   "category": "construction_tools_construction",
+   "orders": 736,
+   "items": 916,
+   "gmv": 142108.49,
+   "avg_review": 4.091,
+   "late_pct": 6.33
+  },
+  {
+   "category": "luggage_accessories",
+   "orders": 1019,
+   "items": 1077,
+   "gmv": 138701.63,
+   "avg_review": 4.352,
+   "late_pct": 4.18
+  },
+  {
+   "category": "home_appliances_2",
+   "orders": 227,
+   "items": 231,
+   "gmv": 107953.95,
+   "avg_review": 4.157,
+   "late_pct": 6.06
+  },
+  {
+   "category": "home_construction",
+   "orders": 483,
+   "items": 596,
+   "gmv": 81407.57,
+   "avg_review": 3.958,
+   "late_pct": 5.87
+  },
+  {
+   "category": "home_appliances",
+   "orders": 747,
+   "items": 754,
+   "gmv": 78832.48,
+   "avg_review": 4.218,
+   "late_pct": 4.51
+  },
+  {
+   "category": "agro_industry_and_commerce",
+   "orders": 177,
+   "items": 206,
+   "gmv": 70566.1,
+   "avg_review": 4.087,
+   "late_pct": 3.4
+  },
+  {
+   "category": "furniture_living_room",
+   "orders": 414,
+   "items": 495,
+   "gmv": 67350.7,
+   "avg_review": 3.935,
+   "late_pct": 7.07
+  },
+  {
+   "category": "home_confort",
+   "orders": 392,
+   "items": 429,
+   "gmv": 58008.45,
+   "avg_review": 3.852,
+   "late_pct": 9.32
+  },
+  {
+   "category": "fixed_telephony",
+   "orders": 212,
+   "items": 255,
+   "gmv": 55315.21,
+   "avg_review": 3.758,
+   "late_pct": 3.92
+  },
+  {
+   "category": "air_conditioning",
+   "orders": 246,
+   "items": 289,
+   "gmv": 53323.56,
+   "avg_review": 4.053,
+   "late_pct": 3.81
+  },
+  {
+   "category": "audio",
+   "orders": 348,
+   "items": 362,
+   "gmv": 50570.6,
+   "avg_review": 3.838,
+   "late_pct": 11.6
+  },
+  {
+   "category": "small_appliances_home_oven_and_coffee",
+   "orders": 72,
+   "items": 73,
+   "gmv": 46589.56,
+   "avg_review": 4.438,
+   "late_pct": 5.48
+  },
+  {
+   "category": "kitchen_dining_laundry_garden_furniture",
+   "orders": 241,
+   "items": 274,
+   "gmv": 45531.98,
+   "avg_review": 4.033,
+   "late_pct": 4.38
+  },
+  {
+   "category": "books_general_interest",
+   "orders": 495,
+   "items": 536,
+   "gmv": 45256.25,
+   "avg_review": 4.511,
+   "late_pct": 6.16
+  },
+  {
+   "category": "construction_tools_lights",
+   "orders": 242,
+   "items": 301,
+   "gmv": 39957.0,
+   "avg_review": 4.082,
+   "late_pct": 7.31
+  },
+  {
+   "category": "construction_tools_safety",
+   "orders": 159,
+   "items": 183,
+   "gmv": 38773.22,
+   "avg_review": 3.967,
+   "late_pct": 2.73
+  },
+  {
+   "category": "industry_commerce_and_business",
+   "orders": 231,
+   "items": 264,
+   "gmv": 38169.81,
+   "avg_review": 4.123,
+   "late_pct": 6.44
+  },
+  {
+   "category": "food",
+   "orders": 441,
+   "items": 499,
+   "gmv": 28731.15,
+   "avg_review": 4.263,
+   "late_pct": 7.01
+  },
+  {
+   "category": "market_place",
+   "orders": 274,
+   "items": 305,
+   "gmv": 27795.77,
+   "avg_review": 4.073,
+   "late_pct": 3.61
+  },
+  {
+   "category": "costruction_tools_garden",
+   "orders": 190,
+   "items": 232,
+   "gmv": 25096.28,
+   "avg_review": 4.116,
+   "late_pct": 5.6
+  },
+  {
+   "category": "art",
+   "orders": 195,
+   "items": 197,
+   "gmv": 23657.3,
+   "avg_review": 4.082,
+   "late_pct": 6.09
+  },
+  {
+   "category": "fashion_shoes",
+   "orders": 235,
+   "items": 257,
+   "gmv": 23001.46,
+   "avg_review": 4.281,
+   "late_pct": 4.28
+  },
+  {
+   "category": "drinks",
+   "orders": 287,
+   "items": 361,
+   "gmv": 21529.84,
+   "avg_review": 4.119,
+   "late_pct": 4.43
+  },
+  {
+   "category": "signaling_and_security",
+   "orders": 138,
+   "items": 197,
+   "gmv": 21315.05,
+   "avg_review": 4.092,
+   "late_pct": 4.06
+  },
+  {
+   "category": "furniture_bedroom",
+   "orders": 90,
+   "items": 103,
+   "gmv": 19051.8,
+   "avg_review": 4.252,
+   "late_pct": 6.8
+  },
+  {
+   "category": "books_technical",
+   "orders": 256,
+   "items": 263,
+   "gmv": 18702.23,
+   "avg_review": 4.389,
+   "late_pct": 7.98
+  },
+  {
+   "category": "costruction_tools_tools",
+   "orders": 97,
+   "items": 103,
+   "gmv": 15903.95,
+   "avg_review": 4.444,
+   "late_pct": 5.83
+  },
+  {
+   "category": "food_drink",
+   "orders": 221,
+   "items": 269,
+   "gmv": 14942.88,
+   "avg_review": 4.364,
+   "late_pct": 4.09
+  },
+  {
+   "category": "fashion_male_clothing",
+   "orders": 106,
+   "items": 125,
+   "gmv": 10452.33,
+   "avg_review": 3.758,
+   "late_pct": 5.6
+  },
+  {
+   "category": "fashion_underwear_beach",
+   "orders": 117,
+   "items": 127,
+   "gmv": 9305.95,
+   "avg_review": 4.048,
+   "late_pct": 9.45
+  },
+  {
+   "category": "christmas_supplies",
+   "orders": 125,
+   "items": 150,
+   "gmv": 8737.84,
+   "avg_review": 4.07,
+   "late_pct": 10.0
+  },
+  {
+   "category": "tablets_printing_image",
+   "orders": 79,
+   "items": 83,
+   "gmv": 7528.41,
+   "avg_review": 4.123,
+   "late_pct": 6.02
+  },
+  {
+   "category": "cine_photo",
+   "orders": 63,
+   "items": 70,
+   "gmv": 6674.47,
+   "avg_review": 4.286,
+   "late_pct": 5.71
+  },
+  {
+   "category": "music",
+   "orders": 38,
+   "items": 38,
+   "gmv": 6034.35,
+   "avg_review": 4.211,
+   "late_pct": 5.26
+  },
+  {
+   "category": "dvds_blu_ray",
+   "orders": 56,
+   "items": 61,
+   "gmv": 4542.59,
+   "avg_review": 4.18,
+   "late_pct": 6.56
+  },
+  {
+   "category": "party_supplies",
+   "orders": 38,
+   "items": 42,
+   "gmv": 4465.19,
+   "avg_review": 3.833,
+   "late_pct": 0.0
+  },
+  {
+   "category": "books_imported",
+   "orders": 50,
+   "items": 57,
+   "gmv": 4418.86,
+   "avg_review": 4.509,
+   "late_pct": 3.51
+  },
+  {
+   "category": "furniture_mattress_and_upholstery",
+   "orders": 37,
+   "items": 37,
+   "gmv": 4323.38,
+   "avg_review": 3.892,
+   "late_pct": 13.51
+  },
+  {
+   "category": "portateis_cozinha_e_preparadores_de_alimentos",
+   "orders": 13,
+   "items": 14,
+   "gmv": 3933.63,
+   "avg_review": 3.429,
+   "late_pct": 7.14
+  },
+  {
+   "category": "fashio_female_clothing",
+   "orders": 36,
+   "items": 45,
+   "gmv": 2634.94,
+   "avg_review": 3.933,
+   "late_pct": 6.67
+  },
+  {
+   "category": "fashion_sport",
+   "orders": 26,
+   "items": 29,
+   "gmv": 2094.52,
+   "avg_review": 4.345,
+   "late_pct": 3.45
+  },
+  {
+   "category": "la_cuisine",
+   "orders": 13,
+   "items": 14,
+   "gmv": 2054.99,
+   "avg_review": 4.0,
+   "late_pct": 0.0
+  },
+  {
+   "category": "arts_and_craftmanship",
+   "orders": 23,
+   "items": 24,
+   "gmv": 1814.01,
+   "avg_review": 4.125,
+   "late_pct": 4.17
+  },
+  {
+   "category": "diapers_and_hygiene",
+   "orders": 25,
+   "items": 37,
+   "gmv": 1500.79,
+   "avg_review": 3.378,
+   "late_pct": 0.0
+  },
+  {
+   "category": "pc_gamer",
+   "orders": 7,
+   "items": 8,
+   "gmv": 1306.95,
+   "avg_review": 3.625,
+   "late_pct": 0.0
+  },
+  {
+   "category": "flowers",
+   "orders": 29,
+   "items": 33,
+   "gmv": 1110.04,
+   "avg_review": 4.419,
+   "late_pct": 3.03
+  },
+  {
+   "category": "home_comfort_2",
+   "orders": 24,
+   "items": 30,
+   "gmv": 760.27,
+   "avg_review": 3.63,
+   "late_pct": 13.33
+  },
+  {
+   "category": "cds_dvds_musicals",
+   "orders": 12,
+   "items": 14,
+   "gmv": 730.0,
+   "avg_review": 4.643,
+   "late_pct": 0.0
+  },
+  {
+   "category": "fashion_childrens_clothes",
+   "orders": 7,
+   "items": 7,
+   "gmv": 519.95,
+   "avg_review": 5.0,
+   "late_pct": 0.0
+  },
+  {
+   "category": "security_and_services",
+   "orders": 2,
+   "items": 2,
+   "gmv": 283.29,
+   "avg_review": 2.5,
+   "late_pct": 0.0
+  }
+ ],
+ "gold_state_kpis": [
+  {
+   "state": "SP",
+   "delivered_orders": 40494,
+   "gmv": 5066562.98,
+   "avg_delivery_days": 8.7,
+   "late_pct": 4.49,
+   "avg_review": 4.246
+  },
+  {
+   "state": "RJ",
+   "delivered_orders": 12350,
+   "gmv": 1759651.13,
+   "avg_delivery_days": 15.24,
+   "late_pct": 12.11,
+   "avg_review": 3.965
+  },
+  {
+   "state": "MG",
+   "delivered_orders": 11354,
+   "gmv": 1552481.83,
+   "avg_delivery_days": 11.94,
+   "late_pct": 4.57,
+   "avg_review": 4.192
+  },
+  {
+   "state": "RS",
+   "delivered_orders": 5344,
+   "gmv": 728718.47,
+   "avg_delivery_days": 15.25,
+   "late_pct": 6.08,
+   "avg_review": 4.185
+  },
+  {
+   "state": "PR",
+   "delivered_orders": 4923,
+   "gmv": 666063.51,
+   "avg_delivery_days": 11.94,
+   "late_pct": 4.04,
+   "avg_review": 4.24
+  },
+  {
+   "state": "SC",
+   "delivered_orders": 3546,
+   "gmv": 507012.13,
+   "avg_delivery_days": 14.9,
+   "late_pct": 8.21,
+   "avg_review": 4.134
+  },
+  {
+   "state": "BA",
+   "delivered_orders": 3256,
+   "gmv": 493584.14,
+   "avg_delivery_days": 19.28,
+   "late_pct": 12.16,
+   "avg_review": 3.931
+  },
+  {
+   "state": "DF",
+   "delivered_orders": 2080,
+   "gmv": 296498.41,
+   "avg_delivery_days": 12.9,
+   "late_pct": 5.67,
+   "avg_review": 4.131
+  },
+  {
+   "state": "GO",
+   "delivered_orders": 1957,
+   "gmv": 282836.7,
+   "avg_delivery_days": 15.54,
+   "late_pct": 6.54,
+   "avg_review": 4.106
+  },
+  {
+   "state": "ES",
+   "delivered_orders": 1995,
+   "gmv": 268643.45,
+   "avg_delivery_days": 15.72,
+   "late_pct": 10.73,
+   "avg_review": 4.079
+  },
+  {
+   "state": "PE",
+   "delivered_orders": 1593,
+   "gmv": 251889.49,
+   "avg_delivery_days": 18.4,
+   "late_pct": 9.6,
+   "avg_review": 4.083
+  },
+  {
+   "state": "CE",
+   "delivered_orders": 1279,
+   "gmv": 219757.38,
+   "avg_delivery_days": 21.2,
+   "late_pct": 13.76,
+   "avg_review": 3.944
+  },
+  {
+   "state": "PA",
+   "delivered_orders": 946,
+   "gmv": 174470.59,
+   "avg_delivery_days": 23.73,
+   "late_pct": 11.21,
+   "avg_review": 3.914
+  },
+  {
+   "state": "MT",
+   "delivered_orders": 886,
+   "gmv": 152191.62,
+   "avg_delivery_days": 18.0,
+   "late_pct": 5.98,
+   "avg_review": 4.146
+  },
+  {
+   "state": "MA",
+   "delivered_orders": 717,
+   "gmv": 117009.38,
+   "avg_delivery_days": 21.51,
+   "late_pct": 17.43,
+   "avg_review": 3.833
+  },
+  {
+   "state": "MS",
+   "delivered_orders": 701,
+   "gmv": 115429.97,
+   "avg_delivery_days": 15.54,
+   "late_pct": 9.7,
+   "avg_review": 4.162
+  },
+  {
+   "state": "PB",
+   "delivered_orders": 517,
+   "gmv": 112586.82,
+   "avg_delivery_days": 20.39,
+   "late_pct": 10.44,
+   "avg_review": 4.076
+  },
+  {
+   "state": "PI",
+   "delivered_orders": 476,
+   "gmv": 84721.0,
+   "avg_delivery_days": 19.39,
+   "late_pct": 13.87,
+   "avg_review": 3.994
+  },
+  {
+   "state": "RN",
+   "delivered_orders": 474,
+   "gmv": 82105.66,
+   "avg_delivery_days": 19.22,
+   "late_pct": 9.28,
+   "avg_review": 4.151
+  },
+  {
+   "state": "AL",
+   "delivered_orders": 397,
+   "gmv": 78855.72,
+   "avg_delivery_days": 24.5,
+   "late_pct": 21.41,
+   "avg_review": 3.848
+  },
+  {
+   "state": "SE",
+   "delivered_orders": 335,
+   "gmv": 56574.19,
+   "avg_delivery_days": 21.46,
+   "late_pct": 15.22,
+   "avg_review": 3.907
+  },
+  {
+   "state": "TO",
+   "delivered_orders": 274,
+   "gmv": 48402.51,
+   "avg_delivery_days": 17.6,
+   "late_pct": 9.85,
+   "avg_review": 4.154
+  },
+  {
+   "state": "RO",
+   "delivered_orders": 243,
+   "gmv": 45682.76,
+   "avg_delivery_days": 19.28,
+   "late_pct": 2.88,
+   "avg_review": 4.165
+  },
+  {
+   "state": "AM",
+   "delivered_orders": 145,
+   "gmv": 22155.84,
+   "avg_delivery_days": 26.36,
+   "late_pct": 2.76,
+   "avg_review": 4.243
+  },
+  {
+   "state": "AC",
+   "delivered_orders": 80,
+   "gmv": 15930.97,
+   "avg_delivery_days": 21.0,
+   "late_pct": 3.75,
+   "avg_review": 4.088
+  },
+  {
+   "state": "AP",
+   "delivered_orders": 67,
+   "gmv": 13374.81,
+   "avg_delivery_days": 27.18,
+   "late_pct": 2.99,
+   "avg_review": 4.242
+  },
+  {
+   "state": "RR",
+   "delivered_orders": 41,
+   "gmv": 7057.47,
+   "avg_delivery_days": 29.34,
+   "late_pct": 12.2,
+   "avg_review": 3.902
+  }
+ ],
+ "gold_review_by_lateness": [
+  {
+   "delivery": "late",
+   "orders": 6381,
+   "avg_review": 2.27,
+   "low_review_pct": 62.42
+  },
+  {
+   "delivery": "on_time",
+   "orders": 89443,
+   "avg_review": 4.29,
+   "low_review_pct": 9.27
+  }
+ ],
+ "headline": {
+  "orders": 99441,
+  "delivered_orders": 96470,
+  "gmv": 13220248.93,
+  "aov": 137.04,
+  "late_pct": 6.77,
+  "avg_delivery_days": 12.5,
+  "avg_review": 4.156,
+  "first_date": "2016-09-04",
+  "last_date": "2018-10-17",
+  "review_on_time": 4.29,
+  "review_late": 2.27,
+  "low_review_on_time_pct": 9.27,
+  "low_review_late_pct": 62.42,
+  "top_category": "health_beauty",
+  "top_category_gmv": 1233131.72,
+  "sp_gmv_share_pct": 38.32
+ }
+}

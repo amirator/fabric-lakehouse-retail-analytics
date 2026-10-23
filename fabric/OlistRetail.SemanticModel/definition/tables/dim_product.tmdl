@@ -1,0 +1,34 @@
+table dim_product
+	lineageTag: da2a52fd-9c29-2383-e828-20a162e4d5cc
+
+	column product_id
+		dataType: string
+		summarizeBy: none
+		sourceColumn: product_id
+		lineageTag: d0f4ca96-a32b-8e22-88a0-e6f59c626c0e
+
+	column category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: category
+		lineageTag: 9a0d0841-f519-8a80-6599-43395ae52dd7
+
+	column weight_g
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: weight_g
+		lineageTag: b0c809a1-95c0-0b84-ab7c-d8dc65852351
+
+	column photos_qty
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: photos_qty
+		lineageTag: c0488c76-b67a-654a-f0dd-b6ab3f05e835
+
+	partition dim_product = entity
+		mode: directLake
+		source
+			entityName: dim_product
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+

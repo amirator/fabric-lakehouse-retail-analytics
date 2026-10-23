@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Olist Retail Lakehouse: Gold-layer report</title>
+<style>
+ body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f3f2f1;color:#252423}
+ header{background:#117865;color:#fff;padding:14px 24px}
+ header h1{margin:0;font-size:22px} header p{margin:4px 0 0;font-size:13px;opacity:.9}
+ .wrap{padding:16px 24px;max-width:1320px;margin:auto}
+ .cards{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+ .card{background:#fff;border-radius:6px;padding:12px 14px;box-shadow:0 1px 2px #0002}
+ .card .v{font-size:24px;font-weight:600} .card .l{font-size:12px;color:#605e5c}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+ .panel{background:#fff;border-radius:6px;padding:12px;box-shadow:0 1px 2px #0002}
+ .panel h2{font-size:14px;margin:0 0 8px} .wide{grid-column:1/3}
+ .chart{position:relative;height:280px} footer{font-size:12px;color:#605e5c;padding:12px 24px 24px;max-width:1320px;margin:auto}
+ .badge{display:inline-block;background:#fff3;border:1px solid #fff8;border-radius:4px;padding:1px 6px;font-size:12px;margin-left:8px}
+</style></head><body>
+<header><h1>Olist Retail Lakehouse: Gold-layer report <span class="badge">Fabric-ready, verified locally; not yet deployed to a Fabric tenant</span></h1>
+<p id="period"></p></header>
+<div class="wrap">
+ <div class="cards" id="cards"></div>
+ <div class="grid">
+  <div class="panel wide"><h2>Monthly GMV (BRL, delivered orders) and late-delivery rate</h2><div class="chart"><canvas id="monthly"></canvas></div></div>
+  <div class="panel"><h2>Top 10 categories by GMV (BRL)</h2><div class="chart"><canvas id="cats"></canvas></div></div>
+  <div class="panel"><h2>Top 10 customer states by GMV (BRL)</h2><div class="chart"><canvas id="states"></canvas></div></div>
+  <div class="panel"><h2>Average review score: on-time vs late delivery</h2><div class="chart"><canvas id="late"></canvas></div></div>
+  <div class="panel"><h2>Average delivery days by state (top 10 by GMV)</h2><div class="chart"><canvas id="days"></canvas></div></div>
+ </div>
+</div>
+<footer>Source: Olist Brazilian E-Commerce public dataset (github.com/olist/work-at-olist-data), CC BY-NC-SA 4.0. Built from gold-layer tables exported to <code>data/gold.json</code> by <code>python run.py</code>. Monthly chart shows months with 100+ orders; association only, not causation.</footer>
+<script src="vendor/chart.umd.min.js"></script>
+<script src="data/gold.js"></script>
+<script>
+(async () => {
+ let G = window.GOLD;
+ if (!G) { G = await (await fetch('data/gold.json')).json(); }
+ const h = G.headline, brl = v => 'R$ ' + (v >= 1e6 ? (v/1e6).toFixed(2)+'M' : v.toLocaleString('en-US',{maximumFractionDigits:0}));
+ document.getElementById('period').textContent = `Orders purchased ${h.first_date} to ${h.last_date} · GMV = item price excl. freight on delivered orders`;
+ const cards = [[brl(h.gmv),'GMV (delivered)'],[h.delivered_orders.toLocaleString(),'Delivered orders'],['R$ '+h.aov.toFixed(2),'Average order value'],
+  [h.late_pct.toFixed(2)+'%','Delivered late'],[h.avg_delivery_days.toFixed(1)+' d','Avg delivery time'],[h.avg_review.toFixed(2)+' / 5','Avg review score']];
+ document.getElementById('cards').innerHTML = cards.map(([v,l])=>`<div class="card"><div class="v">${v}</div><div class="l">${l}</div></div>`).join('');
+ Chart.defaults.animation = false; Chart.defaults.maintainAspectRatio = false;
+ const m = G.gold_monthly_kpis.filter(r => r.orders >= 100);
+ new Chart(monthly, {data:{labels:m.map(r=>r.year_month),datasets:[
+   {type:'bar',label:'GMV (BRL)',data:m.map(r=>r.gmv),backgroundColor:'#118DFF',yAxisID:'y'},
+   {type:'line',order:-1,label:'Late %',data:m.map(r=>r.late_pct),borderColor:'#E66C37',backgroundColor:'#E66C37',yAxisID:'y1'}]},
+  options:{scales:{y:{title:{display:true,text:'GMV (BRL)'}},y1:{position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'Late %'}}}}});
+ const bar = (el, rows, lab, val, color, ttl) => new Chart(el,{type:'bar',data:{labels:rows.map(r=>r[lab]),datasets:[{label:ttl,data:rows.map(r=>r[val]),backgroundColor:color}]},
+  options:{indexAxis:'y',plugins:{legend:{display:false}}}});
+ bar(cats, G.gold_category_kpis.slice(0,10),'category','gmv','#12239E','GMV');
+ const st = G.gold_state_kpis.slice(0,10);
+ bar(states, st,'state','gmv','#117865','GMV');
+ bar(days, st,'state','avg_delivery_days','#6B007B','Days');
+ const L = G.gold_review_by_lateness;
+ new Chart(late,{type:'bar',data:{labels:L.map(r=>r.delivery==='late'?`Late (${r.orders.toLocaleString()} orders)`:`On time (${r.orders.toLocaleString()} orders)`),
+  datasets:[{label:'Avg review',data:L.map(r=>r.avg_review),backgroundColor:['#E66C37','#118DFF']}]},options:{plugins:{legend:{display:false}},scales:{y:{min:0,max:5}}}});
+})();
+</script></body></html>

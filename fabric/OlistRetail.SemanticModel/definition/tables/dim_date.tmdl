@@ -1,0 +1,48 @@
+table dim_date
+	lineageTag: 39aa9573-0907-fc94-dbb3-1b66e11ac77f
+	dataCategory: Time
+
+	column date
+		dataType: dateTime
+		isKey
+		summarizeBy: none
+		sourceColumn: date
+		lineageTag: 946c99f3-2411-dc73-cf84-56ee4e73597c
+
+	column year
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: year
+		lineageTag: 9232a9df-a22f-ee62-15ed-b1b289fb30a4
+
+	column month
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: month
+		lineageTag: 45b4c6b3-cbdc-c4b6-9d6c-a7d2dd8f72d2
+
+	column year_month_key
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: year_month_key
+		lineageTag: cfdf7a45-bf93-6fd6-6047-af0382a93d15
+
+	column year_month
+		dataType: string
+		summarizeBy: none
+		sourceColumn: year_month
+		lineageTag: 23be7456-c806-3334-c333-6e2241e12769
+
+	column quarter
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: quarter
+		lineageTag: 2a413a89-b0dc-c119-57f0-c3c5007fb1db
+
+	partition dim_date = entity
+		mode: directLake
+		source
+			entityName: dim_date
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+

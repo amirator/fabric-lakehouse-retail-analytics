@@ -1,0 +1,132 @@
+table fact_orders
+	lineageTag: 82eae034-0c70-e479-7324-27ccaaae40f8
+
+	measure 'Orders' = COUNTROWS ( fact_orders )
+		formatString: #,0
+		lineageTag: 51bbe891-7ce6-4bce-ca03-68f4224d88fb
+
+	measure 'Delivered Orders' = SUM ( fact_orders[is_delivered] )
+		formatString: #,0
+		lineageTag: eb385574-71f0-bc28-4ac7-4d22e735458f
+
+	measure 'GMV' = CALCULATE ( SUM ( fact_orders[items_value] ), fact_orders[is_delivered] = 1 )
+		formatString: "R$" #,0.00
+		lineageTag: 60e2dc56-ec78-ff9f-260a-23cc0770f0cb
+
+	measure 'AOV' = DIVIDE ( [GMV], [Delivered Orders] )
+		formatString: "R$" #,0.00
+		lineageTag: 9e7b06fd-f9d6-a31e-387a-730cc4876589
+
+	measure 'Freight' = CALCULATE ( SUM ( fact_orders[freight_value] ), fact_orders[is_delivered] = 1 )
+		formatString: "R$" #,0.00
+		lineageTag: 21f9f5c9-e053-5097-7b6c-97b3339613ca
+
+	measure 'Late Delivery %' = CALCULATE ( AVERAGE ( fact_orders[is_late] ), fact_orders[is_delivered] = 1 )
+		formatString: 0.00%
+		lineageTag: 09745eb3-283c-9631-b9f9-e9ca3f59a1b9
+
+	measure 'Avg Delivery Days' = CALCULATE ( AVERAGE ( fact_orders[delivery_days] ), fact_orders[is_delivered] = 1 )
+		formatString: 0.0
+		lineageTag: d1571823-1b95-abeb-2dd7-0c7c6b118512
+
+	measure 'Avg Review Score' = CALCULATE ( AVERAGE ( fact_orders[review_score] ), fact_orders[is_delivered] = 1 )
+		formatString: 0.00
+		lineageTag: 2478b15e-afce-0009-7d94-0509f03c5e81
+
+	measure 'Item GMV' = CALCULATE ( SUM ( fact_order_items[price] ), fact_order_items[order_status] = "delivered" )
+		formatString: "R$" #,0.00
+		lineageTag: 19d8eb0f-0660-c0ee-06d7-17d643c9dc5f
+
+	measure 'GMV PY' = CALCULATE ( [GMV], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+		formatString: "R$" #,0.00
+		lineageTag: a7b103b7-90a0-b3b5-a7da-0583ccd5382e
+
+	measure 'GMV YoY %' = DIVIDE ( [GMV] - [GMV PY], [GMV PY] )
+		formatString: 0.0%
+		lineageTag: 6bae1278-bd25-7410-ea53-7da145b5b45c
+
+	measure 'Customers' = DISTINCTCOUNT ( dim_customer[customer_unique_id] )
+		formatString: #,0
+		lineageTag: 84b7b00e-491f-4b6a-2bd2-fbdbef84a172
+
+	column order_id
+		dataType: string
+		summarizeBy: none
+		sourceColumn: order_id
+		lineageTag: 08414826-3b7a-6236-ad6b-d2e16bcdf2de
+
+	column customer_id
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+		lineageTag: 6a1efe42-b379-6203-4386-fa2f084eafb5
+
+	column order_date
+		dataType: dateTime
+		isHidden
+		summarizeBy: none
+		sourceColumn: order_date
+		lineageTag: 7d876ba5-082e-3a6d-3ebe-691d90f7fc53
+
+	column order_status
+		dataType: string
+		summarizeBy: none
+		sourceColumn: order_status
+		lineageTag: 1c24948a-714c-88ce-4019-86602b35ae62
+
+	column is_delivered
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: is_delivered
+		lineageTag: 22fc1d7b-9eec-4804-620f-d46b1b14eb09
+
+	column item_count
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: item_count
+		lineageTag: cc6e0023-20b1-dce5-6601-9bb9291356af
+
+	column items_value
+		dataType: decimal
+		summarizeBy: sum
+		sourceColumn: items_value
+		lineageTag: 8dd18e43-f6b2-7d35-0036-94382eae7dae
+
+	column freight_value
+		dataType: decimal
+		summarizeBy: sum
+		sourceColumn: freight_value
+		lineageTag: a32ded20-441f-96a5-54f0-d711181d4fe0
+
+	column payment_value
+		dataType: decimal
+		summarizeBy: sum
+		sourceColumn: payment_value
+		lineageTag: 21438633-0d4d-4240-6938-226c092ffd34
+
+	column delivery_days
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: delivery_days
+		lineageTag: c14d4572-846f-13d1-caf0-46928d54b70b
+
+	column is_late
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: is_late
+		lineageTag: 442268fe-1aee-0c4a-a702-e367ce77d670
+
+	column review_score
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: review_score
+		lineageTag: 577d8764-53c4-91f4-b9f4-ff6198f7f92c
+
+	partition fact_orders = entity
+		mode: directLake
+		source
+			entityName: fact_orders
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+

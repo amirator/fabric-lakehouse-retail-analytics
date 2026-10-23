@@ -1,0 +1,28 @@
+table dim_seller
+	lineageTag: 05a5773c-2eae-fcd9-2381-e804c5996b1b
+
+	column seller_id
+		dataType: string
+		summarizeBy: none
+		sourceColumn: seller_id
+		lineageTag: 1d2f6950-e111-933d-e8fd-c0b3f5b53706
+
+	column city
+		dataType: string
+		summarizeBy: none
+		sourceColumn: city
+		lineageTag: da71d8be-071d-cb86-8a46-1aeac340e7fb
+
+	column state
+		dataType: string
+		summarizeBy: none
+		sourceColumn: state
+		lineageTag: 727889e8-be3b-35b7-5ba8-057aa8fe9626
+
+	partition dim_seller = entity
+		mode: directLake
+		source
+			entityName: dim_seller
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+

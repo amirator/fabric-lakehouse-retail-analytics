@@ -1,0 +1,68 @@
+table fact_order_items
+	lineageTag: 4aa25ff0-ccba-dd73-393a-fd7b7194b78e
+
+	column order_id
+		dataType: string
+		summarizeBy: none
+		sourceColumn: order_id
+		lineageTag: 954b836f-7326-706a-2764-409bbc8d7f57
+
+	column order_item_id
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: order_item_id
+		lineageTag: f673c7a4-3a72-5a9d-a0c4-e5387bc80d60
+
+	column product_id
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: product_id
+		lineageTag: 63df04a2-d410-cf30-1590-44acc2466f45
+
+	column seller_id
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: seller_id
+		lineageTag: 4339c053-3a04-8c68-b4d8-fa66a18631b4
+
+	column customer_id
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+		lineageTag: eab5c9ce-d0ad-a821-4138-8eee9e1110ca
+
+	column order_date
+		dataType: dateTime
+		isHidden
+		summarizeBy: none
+		sourceColumn: order_date
+		lineageTag: 981cbd75-39c0-fc7c-a64b-e240e6c88fc1
+
+	column order_status
+		dataType: string
+		summarizeBy: none
+		sourceColumn: order_status
+		lineageTag: 3ee428b8-7038-c9f4-d762-d664c86021f9
+
+	column price
+		dataType: decimal
+		summarizeBy: sum
+		sourceColumn: price
+		lineageTag: d9e66810-ae76-3e8c-856e-400af1bed79c
+
+	column freight_value
+		dataType: decimal
+		summarizeBy: sum
+		sourceColumn: freight_value
+		lineageTag: 8efa8cd1-b72e-a18e-4b14-ff2ca2c4653f
+
+	partition fact_order_items = entity
+		mode: directLake
+		source
+			entityName: fact_order_items
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+

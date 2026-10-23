@@ -1,0 +1,12 @@
+# fabric-cicd parameterization (https://microsoft.github.io/fabric-cicd/latest/how_to/parameterization/)
+# Replace the right-hand values with your workspace's Lakehouse SQL analytics endpoint and Lakehouse id
+# (Lakehouse > Settings > SQL analytics endpoint). Nothing here has been deployed yet.
+find_replace:
+    - find_value: "__SQL_ENDPOINT__"
+      replace_value:
+          DEV: "xxxxxxxx.datawarehouse.fabric.microsoft.com"
+      item_type: "SemanticModel"
+    - find_value: "__LAKEHOUSE_ID__"
+      replace_value:
+          DEV: "00000000-0000-0000-0000-000000000000"
+      item_type: "SemanticModel"
