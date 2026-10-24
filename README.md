@@ -107,4 +107,4 @@ The pytest suite runs 38 checks:
 See [docs/REFERENCES.md](docs/REFERENCES.md).
 
 ## Author
-Mohammad Amir Khan. Portfolio project built on public data, with no client or employer work.
+Amir Khan. Portfolio project built on public data, with no client or employer work.

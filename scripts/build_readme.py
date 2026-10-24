@@ -116,7 +116,7 @@ The pytest suite runs {{n_tests}} checks:
 See [docs/REFERENCES.md](docs/REFERENCES.md).
 
 ## Author
-Mohammad Amir Khan. Portfolio project built on public data, with no client or employer work.
+Amir Khan. Portfolio project built on public data, with no client or employer work.
 """
 
 n_tests = None
